@@ -1,0 +1,30 @@
+﻿<unity:PrismApplication x:Class="PogromcaBiznesRadar.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:PogromcaBiznesRadar"
+             xmlns:unity="clr-namespace:Prism.Unity;assembly=Prism.Unity.Wpf">
+
+    <Application.Resources>
+
+        <Style x:Key="BackgroundStyle" TargetType="Grid">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding BackgroundColor}" Value="0">
+                    <Setter Property="Background" Value="White"></Setter>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding BackgroundColor}" Value="1">
+                    <Setter Property="Background" Value="Gray"></Setter>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding BackgroundColor}" Value="3">
+                    <Setter Property="Background" Value="blue"></Setter>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding BackgroundColor}" Value="2">
+                    <Setter Property="Background" Value="Orange"></Setter>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding BackgroundColor}" Value="4">
+                    <Setter Property="Background" Value="LightGreen"></Setter>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+
+    </Application.Resources>
+</unity:PrismApplication>
